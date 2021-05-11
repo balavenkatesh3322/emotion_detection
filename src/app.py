@@ -14,10 +14,11 @@ import os
 
 app = Flask(__name__)
 
-if os.environ.get('WERKZEUG_RUN_MAIN') or Flask.debug is False:
-    print("balllllllllllll")
-    cap = cv2.VideoCapture(0)
-#cap = cv2.VideoCapture(-1)
+#if os.environ.get('WERKZEUG_RUN_MAIN') or Flask.debug is False:
+    #print("balllllllllllll")
+    #cap = cv2.VideoCapture(0)
+
+cap = cv2.VideoCapture(0)
 #  for cctv camera use rtsp://username:password@ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp' instead of camera
 #camera = cv2.VideoCapture(-1)
 
